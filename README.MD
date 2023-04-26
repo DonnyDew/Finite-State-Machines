@@ -1,5 +1,5 @@
 # Overview
-This project is an implementation of Finite Automata specifically a DFA(Deterministic finite automata) and NFA(Nondeterministic finite automata)
+This project is an implementation of Finite Automata specifically a DFA(Deterministic finite automata) and NFA(Nondeterministic finite automata). This is my final for MATH 4931 Theory of Computation and Formal Language with Dr.Pantone at Marquette University.
 
 1. Automata.py: Contains the `Automata` class, which serves as a base class for the `NFA` and `DFA` classes. The `Automata` class defines the basic structure and methods of finite automata, including state transitions, accepting states, and alphabet.
 2. NFA.py: Contains the `NFA` class, which is a subclass of `Automata`. The `NFA` class defines the behavior of non-deterministic finite automata, which can be in multiple states at once and have multiple transition paths for a given input symbol.
