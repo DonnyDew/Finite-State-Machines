@@ -106,8 +106,7 @@ class NFA(Automata):
 
     def process_word(self, word):
         #Run through NFA to determine if the word is in the lanugage
-        current_states = self.reachable_states(self.q0)  # current states are self.qo and where an epislon can take q0
-        
+        current_states = set([self.q0])  # current states are self.qo and where an epislon can take q0
         for letter in word:
             next_states = set()
             for state in current_states: #Multiple universes
@@ -191,7 +190,7 @@ class NFA(Automata):
             next_states = transition[1]
             new_delta_formatted.append([current_state, input_symbol, list(next_states)])
 
-        # Step 3: Combine the state sets, input alphabets, transition functions, and final state sets of the input NFA's
+        # Step 3: Combine the state sets, input alphabets,and final state sets of the input NFA's
         new_Q = self.Q + nfa2.Q + [new_start_state]
         new_Sigma = list(set(self.Sigma) | set(nfa2.Sigma))
         new_F = self.F + nfa2.F
