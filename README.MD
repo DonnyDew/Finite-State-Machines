@@ -25,4 +25,4 @@ To perform an operation on two automata, select "Union," "Intersection," or "Con
 To perform Kleene star operation on an automaton, select "Kleene Star" from the top menu. This will open a new tab where you can select the automaton to perform Kleene star operation on and view the resulting automaton.
 
 ## Example Creation of Automata 
-![alt text](example usage.PNG)
+![Example Usage](example_usage.PNG)
